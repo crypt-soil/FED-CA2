@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LOIS' FED CA2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css_files/page1.css">
+    <link rel="stylesheet" href="css_files/repeatcode.css">
+    <link rel="stylesheet" href="css_files/imagesedit.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body class="poppins-semibold" onload="onLoadHandler()"> <!---onLoadHandler is for the transition of the title-->
+    <script src="./js_files/firstPage.js" defer></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <!--start of navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://www.sp.edu.sg/">
+            <img class="img-fluid" src="https://scholarshipguide.com.sg/images/providers/116.png" alt="https://assets.charltonmedia.com/s3fs-public/styles/opengraph/public/2023-09/sp.png?h=b7fb795e&itok=fbgAco4w" width="200" height="100"> 
+          </a>
+          <!---data-bs-toggle = to make it collapsed at the start, data-bs-target = specifies the element ID that needs to be toggled-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="container-fluid collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pagetwo.html">Looking Back</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pagethree.html">Wishes & Messages</a>
+              </li>
+              <li class="nav-item">
+                <!---text-muted to make it have a lighter appearance-->
+                <a class="nav-link disabled text-muted" aria-disabled="true">SP70: Celebrating 70 years of education!</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> 
+      <!---Singapore Polytechnic Title-->
+      <div id="firstSee" class="mt-5 mb-5">
+      <div class="text-center" id="beginning">
+        <!--click to remove transition-->
+        <p id="titleschoolname" class="h1 schoolname" onclick="removeTransition()"> SINGAPORE <br> POLYTECHNIC </p> 
+        <p class="h3"> celebrating </p>
+        <p class="h2 text-danger mb-5">SEVENTY YEARS!</p>
+      </div>
+
+      <!--start of findOut; after the 'Find out more?' button-->
+      <div class="text-center container-fluid">
+        <a href="#findOutSection" class="btn btn-outline-danger btn-lg">Find out more?</a>
+      </div>
+      </div>
+
+
+
+      <div id="findOutSection" class="container-fluid">
+      <div class="row">
+      <div class="col-md-6 col-lg-4 mb-5">
+        <div class="card box-shadow-lg">
+          <img src="https://www.sp.edu.sg/images/default-source/og-defaults/singapore-polytechnic-default-og.png" class="img-fluid card-img-top" alt="https://www.sp.edu.sg/images/default-source/og-defaults/singapore-polytechnic-default-og.png">
+          <div class="card-body">
+            <p class="h4 card-title">Our <span class="text-danger">Values</span></p>
+            <div class="card-text">
+              <p><span class="text-danger">S</span>elf discipline </p>
+              <p><span class="text-danger">P</span>ersonal integrity</p>
+              <p><span class="text-danger">C</span>are & Concern <p>
+              <p><span class="text-danger">O</span>peness</p>
+              <p><span class="text-danger">R</span>esponsibility</p>
+              <p><span class="text-danger">E</span>xcellence</p>
+              </div>
+            <a href="https://www.sp.edu.sg/sp/student-services/osc-overview/student-handbook/code-of-conduct#:~:text=It%20encompasses%20six%20core%20values,Responsibility%20and%20Excellence%20%2D%20SP%20CORE." target="_blank" class="mt-1 btn btn-danger">Find out more!</a>
+            </div>
+          </div>
+        </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card box-shadow-lg">
+          <img src="photos_files/spmission.png" class="img-fluid card-img-top" alt="https://www.sp.edu.sg/images/default-source/content-migration/content-migration/vision-jpg.jpg?Status=Master&sfvrsn=7e5102db_0">
+          <div class="card-body">
+            <h4 class="card-title">Our <span class="text-danger">Mission</span></h4>
+            <div class="card-text">
+              <p>As a polytechnic for all ages</p>
+              <p>we prepare our learners to be</p>
+              <p><span class="text-danger">life</span> ready, </p>
+              <p><span class="text-danger">work</span> ready,</p> 
+              <p> <span class="text-danger">world</span> ready </p>  
+              <p>for the transformation for Singapore.</p>
+            </div>
+            <a href="https://www.sp.edu.sg/sp/about-sp/corporate-information/mission-vision" target="_blank" class="mt-1 btn btn-danger">Find out more!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card box-shadow-lg">
+          <img id="logo" src="https://www.logolynx.com/images/logolynx/da/da5ea0290cfbde4253426adc6e82d673.jpeg" class="card-img-top img-fluid" alt="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1c05cbe2-c012-4a9a-b017-0e68981727b1/davukto-2848e33f-6efa-4958-8a2e-c4c60d9d886a.jpg/v1/fill/w_894,h_894,q_70,strp/coa_of_singapore_poly_by_sempereadem_sg_davukto-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTkyMCIsInBhdGgiOiJcL2ZcLzFjMDVjYmUyLWMwMTItNGE5YS1iMDE3LTBlNjg5ODE3MjdiMVwvZGF2dWt0by0yODQ4ZTMzZi02ZWZhLTQ5NTgtOGEyZS1jNGM2MGQ5ZDg4NmEuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.6tx8ckDWhvnk78QchsFHAM2CcyZdCy1gG1HLqD0nm6w">
+          <div class="card-body">
+            <h4 class="card-title">Our <span class="text-danger">Crest</span></h4>
+            <p class="card-text"> 
+              <div class="accordion accordion-flush" id="acccordionFlush">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">The colour red </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#acccordionFlush">
+                      <div class="accordion-body">Is used to associate with the Singapore flag.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        The Lion
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#acccordionFlush">
+                      <div class="accordion-body">It is used to represent Singapore</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        The compass
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#acccordionFlush">
+                      <div class="accordion-body">Is used to represent exact measurements and precision</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                          The splinted wheel
+                        </button>
+                      </h2>
+                      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#acccordionFlush">
+                        <div class="accordion-body">Is used to denote engineering technology.</div>
+                      </div>
+                    </div>
+                </div>
+                <br>
+            <a href="https://www.sp.edu.sg/sp/about-sp/the-sp-story/sp-traditions" target="_blank" class="mt-1 btn btn-danger">Find out more!</a>
+          </div>
+        </div>
+        </div>
+     </div>
+    </div>
+    <!--SP70 commemeration-->
+    <div id="partTwo" class="bg-danger container-fluid pb-5 mb-5">
+      <p class="h2 text-center text-white pt-5 pb-3">SP70 Commemeration</p>
+      <p class="text-center text-white pb-5">How did we celebrate?</p>
+      <div id="carouselCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="https://www.sp.edu.sg/sp70#popup2" target="_blank"><img class="img-fluid d-block mx-auto w-75 anchored-image" src="https://www.sp.edu.sg/images/default-source/default-album/sp-openhouse-2024-abe-students.jpg?sfvrsn=5e11d6ed_0" alt="https://www.sp.edu.sg/images/default-source/default-album/acers-sp-openhouse-2024.jpg?sfvrsn=4b75f2e9_0"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>SP's 70th Anniversary Open House</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="https://www.sp.edu.sg/sp70#popup3" target="_blank"><img class="img-fluid d-block mx-auto w-75 anchored-image" src="https://www.sp.edu.sg/images/default-source/sp70-content/mf-hero-image-255x127.jpg?sfvrsn=2fca7527_3" alt="https://www.sp.edu.sg/images/default-source/sp70-content/music-festival-hosts.jpg?sfvrsn=42a373fc_3"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>SP70th Anniversary Music Festival 2024</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="https://www.sp.edu.sg/sp70#popup4" target="_blank"><img class="img-fluid d-block mx-auto anchored-image" src="https://www.sp.edu.sg/images/default-source/sp70-content/sp-charity-golf-gala-dinner-president-challenge.jpg?sfvrsn=bef36775_1" alt="https://www.sp.edu.sg/images/default-source/sp70-content/sp-charity-golf-gala-dinner-president-challenge.jpg?sfvrsn=bef36775_1"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>SP70 Charity Golf and Gala Dinner</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  
+
+    <div id="partThree" class="container-fluid mt-5">
+      <div class="bg-danger">
+        <h2 id="changingMessage" class="pt-5 mt-5 text-center text-white">What better way to promote SP70 in my own way</h2>
+      <div class="d-flex justify-content-center">
+        <!---button that changes the message on click-->
+      <button id="changeMessage" onclick="changeMessage()" class="mt-3 mb-5 btn btn-light text-danger">than to...</button>
+      </div>
+      </div>
+    
+    <div id="thanTo">
+      <h2 class="mb-5 text-center" hidden>talk about the things I love about SP!</h2>
+    </div>
+      <div class="d-flex justify-content-center mb-3 d-md-none">
+        <button class="navbar-toggler" type="button" id="hamburgerButton" aria-expanded="false" aria-label="Toggle tabs">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <!---tab section-->
+      <div class="pt-5 collapsed-flex text-align-center">
+        <div id="tabs" class="nav nav-pills justify-content-center my-5" role="tablist" aria-orientation="vertical">
+          <button class="btn-red nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-es" type="button" role="tab" aria-controls="pills-es" aria-selected="true">Our E-services</button>
+          <button class="btn-red nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-fc" type="button" role="tab" aria-controls="pills-fc" aria-selected="false">Our FCs!</button>
+          <button class="btn-red nav-link" id="pills-messages-tab" data-bs-toggle="pill" data-bs-target="#pills-comm" type="button" role="tab" aria-controls="pills-comm" aria-selected="false">The best courses SP offers!</button>
+        </div>
+        <div class="mt-5 ms-3 tab-content px-5" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-es" role="tabpanel" aria-labelledby="pills-es" tabindex="0">
+            <a href="https://www.sp.edu.sg/student-eservices" target="_blank"><img class="img-fluid d-block mx-auto shadow-lg mb-5" id="eserv" src="https://www.sp.edu.sg/images/default-source/abe/student-eservices-banner-announcement.png?sfvrsn=7a086e8_1" alt="photos_files/Screenshot 2024-07-18 230435.png" data-bs-target="_blank"></a>
+            <button class="d-block mx-auto align-items-center btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal">Why we like SP eservices!</button>
+            <div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalLabel">Our E-services</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>It is a <mark>shared exprienced</mark> of every SP student!</p>
+                    <p>whether is it filling in for LOA, checking our timetables or even submitting our attendance code when our mobile fails us!</p>
+                    Truly a one stop hub that all SP students are familiar with to help them when they need to do things.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-fc" role="tabpanel" aria-labelledby="pills-fc" tabindex="0">
+            <code>Eatbook's article about the best Singapore Polytechnic food!</code><br>
+            <img id="eatbook" src="photos_files/eatbook.png" alt="https://i.ytimg.com/vi/78GwMkTOJ1c/hqdefault.jpg" class="img-fluid mb-5 shadow-lg">
+            <br>
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalEatbook"> More info about the Eatbook article about SP! </button>
+            <div class="modal fade" id="modalEatbook" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalEatbook" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalEatbookLabel">SP's Eatbook Article!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <figure>
+                      <blockquote class="blockquote">"Food is history on a plate."</blockquote>
+                    <figcaption class="blockquote-footer">
+                      Unknown
+                    </figcaption>
+                    </figure>
+                    
+                    <p>A wise man once said that food speaks volumes about a place's history.</p>
+                    <small class="text-danger mt-5">Eatbook's most liked store from each food court of SP.</small>
+                    <table class="table-responsive mb-5 table table-hover table-bordered">
+                      <thead>
+                        <tr>
+                          <th scope="col">Food Court #</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Second</th>
+                          <th scope="col">Third</th>
+                          <th scope="col">Four</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Japanese Curry</td>
+                          <td>.</td>
+                          <td>.</td>
+                          <td>.</td>
+        
+        
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Indonesian Express</td>
+                          <td>.</td>
+                          <td>.</td>
+                          <td>.</td>
+        
+        
+        
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Chinese Cuisine Stall</td>
+                          <td>SP Mini Wok</td>
+                          <td>Crumbz Up</td>
+                          <td>Mr Pasta</td>
+        
+                        </tr>
+                        <tr >
+                          <th scope="row">4</th>
+                          <td>Taiwanese Cuisine</td>
+                          <td>Happiness Sunbo</td>
+                          <td>.</td>
+                          <td>.</td>
+        
+        
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td>Brunch Cafe</td>
+                          <td>.</td>
+                          <td>.</td>
+                          <td>.</td>
+                          
+        
+                        </tr>
+                        <tr>
+                          <th scope="row">6</th>
+                          <td>Creamy Duck</td>
+                          <td>.</td>
+                          <td>.</td>
+                          <td>.</td>
+        
+        
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-comm" role="tabpanel" aria-labelledby="pills-comm" tabindex="0">
+            <div class="courses col mx-5">
+                <small>Click on the images if you're curious about the courses available to you from the school!</small>
+                <div class="row mb-5">
+                  <a href="https://www.sp.edu.sg/abe/courses" target="_blank">
+                  <img class="img-fluid" src="https://www.sp.edu.sg/images/default-source/spoh2024/abe37e055a43f0a451385b9972762436a33.png?sfvrsn=9fea1084_0" alt="https://www.sp.edu.sg/images/default-source/spoh2024/abe37e055a43f0a451385b9972762436a33.png?sfvrsn=9fea1084_0">
+                  </a>
+                </div>
+            
+
+              <div class="row mb-5">
+                  <a href="https://www.sp.edu.sg/sb/courses/full-time-diplomas" target="_blank">
+                  <img class="img-fluid" src="https://www.sp.edu.sg/images/default-source/default-album/sbe9ff7b3c87e84837933012ea33883e93.png?sfvrsn=7c173398_0" alt="https://www.sp.edu.sg/images/default-source/biz/fa_211202_spoh2022_webbanners_desktop_sb.jpg?sfvrsn=c5a93bfb_0"> 
+                  </a>
+               </div>
+               
+              <div class="row mb-5">
+                <a href="https://www.sp.edu.sg/cls/courses" target="_blank">
+                <img class="img-fluid" src="https://www.sp.edu.sg/images/default-source/default-album/clsc89bf2a3e8ab4a03a785dc719306343e.png?sfvrsn=fc30b89e_0" alt="https://media.licdn.com/dms/image/D4D1BAQFs801hBRsOPg/company-background_10000/0/1654744749884/sp_cls_cover?e=2147483647&v=beta&t=JsFg7WRgCGNeQgS_-z1Ac1pDvciQDotOm8l-eOh4yaQ">
+                </a>
+
+              </div>
+              
+              <div class="row mb-5">
+                <a href="https://www.sp.edu.sg/soc/courses/full-time-diplomas" target="_blank">
+                <img class="img-fluid" src="https://www.sp.edu.sg/images/default-source/dmit/soc-web-banner.png?sfvrsn=65766971_6" alt="https://media.licdn.com/dms/image/C561BAQHezs3_a73FfA/company-background_10000/0/1601626715017/sp_school_of_computing_cover?e=2147483647&v=beta&t=Bu8dIURx6H8VGuh3950VqxRpqHkfR6i3nBKXJwRYipc">
+                </a>
+
+              </div>
+              
+              <div class="row mb-5">
+                <a href="https://www.sp.edu.sg/engineering-cluster/eee/courses" target="_blank">
+                <img class="img-fluid" src="https://www.sp.edu.sg/images/default-source/spoh2024/eee-(1).png?sfvrsn=eea288b4_0" alt="https://media.licdn.com/dms/image/C4E16AQFbeMOmL0auTg/profile-displaybackgroundimage-shrink_200_800/0/1654049752527?e=2147483647&v=beta&t=YvjrP-ucVQ4T0aV3TZK7pWkDQehDEOIs8f_yNqdLARs">
+                </a>
+
+              </div>
+              <div class="row mb-5">
+                <a href="https://www.sp.edu.sg/LSC" target="_blank">
+                <img class="img-fluid" src="https://www.sp.edu.sg/images/default-source/spoh2024/lscda8f25e579b247479ee1cfc496804bd2.png?sfvrsn=6c3d6270_0" alt="#">
+                </a>
+              </div>
+
+              <div class="row mb-5">
+                <a href="https://www.sp.edu.sg/mad" target="_blank">
+                <img class="img-fluid" src="https://www.sp.edu.sg/images/default-source/mad-school-(jan-2019)/spoh-mad.jpg?sfvrsn=ce08e196_2" alt="https://yt3.googleusercontent.com/r45kyrbVPFc19Z0qAIm4_riX_6ojqJOm8vH4MGJl66VKaiN7GpKkXJymC6xW25gtRyAavJ9Rsg=w1060-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj">
+                </a>
+
+              </div>
+              <div class="row mb-5">
+                <a href="https://www.sp.edu.sg/engineering-cluster/mae" target="_blank">
+                <img  class="img-fluid" src="https://www.sp.edu.sg/images/default-source/mae/mae/school-web-banner_mae.png?sfvrsn=75b6d8a6_0" alt="https://www.sp.edu.sg/images/default-source/mae/2021/201125_spoh21_corporatebanners_mae.jpg?sfvrsn=f2815d19_4">
+                </a>
+
+              </div>
+              <div class="row mb-5">
+                <a href="https://www.sp.edu.sg/ms" target="_blank">
+                <img  class="img-fluid" src="https://www.sp.edu.sg/images/default-source/default-album/ms.png?sfvrsn=d3609030_0" alt="https://www.sp.edu.sg/images/default-source/m-s/fa_220106_spoh2022_webbanners_desktop_ms.png?sfvrsn=50c8594c_0">
+
+                </a>
+              </div>
+              <div class="row mb-5">
+                <a href="https://www.sp.edu.sg/sma" target="_blank">
+                <img  class="img-fluid" src="https://www.sp.edu.sg/images/default-source/spoh2024/sma-(1).png?sfvrsn=cf08c309_0" alt="https://www.sp.edu.sg/images/default-source/sma-homepage-gallery/fa_211202_spoh2022_webbanners_desktop_sma.jpg?sfvrsn=4a65d43a_0">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center pt-5 my-5 border-top px-5">
+      <div class="col-md-6 d-flex align-items-center">
+        &#169; 2024 Singapore Polytechnic
+      </div>
+      <div class="col-md-3 d-flex">
+        <div class="row gx-5">
+          <div class="col">
+            <a href="https://www.facebook.com/singaporepolytechnic/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="https://freebiehive.com/wp-content/uploads/2024/01/Facebook-Icon-PNG.jpg"></a>
+          </div>
+          <div class="col">
+            <a href="https://www.instagram.com/singaporepoly/?hl=en" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/800px-Instagram_icon.png" alt="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNTMzLW5lb24tMDAzLnBuZw.png"></a>
+          </div>
+          <div class="col">
+            <a href="https://www.tiktok.com/@singaporepoly?lang=en" target="_blank"><img src="https://e7.pngegg.com/pngimages/545/550/png-clipart-tik-tok-icon-circle-tech-companies-thumbnail.png" alt="https://e7.pngegg.com/pngimages/545/550/png-clipart-tik-tok-icon-circle-tech-companies.png"></a>
+          </div>
+      </div>
+      </div>
+    </footer>
+  </body>
+</html>

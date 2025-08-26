@@ -1,0 +1,30 @@
+div#scrollspy {
+    position: relative;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 1.5rem;
+    border-width: 1px;
+}
+
+
+.scrollspy-example {
+    height: 50vh;
+    overflow-y: auto; 
+  }
+
+div.row>div.col>a>img{
+    height: 50px;
+}
+
+div#awards {
+    margin-top: 200px;
+}
+
+nav.navbar {
+    z-index: 1000; 
+}
+
+
+.modal {
+    display: none;
+  }
